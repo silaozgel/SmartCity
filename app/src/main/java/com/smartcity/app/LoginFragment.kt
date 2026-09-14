@@ -155,9 +155,6 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
             }
     }
 
-// firestoredeneme@gmail.com
-// sila1@gmail.com
-
     //Rol fonksiyonu güncellendi : uygulamaya kayıt olan her kullanıcı default olarak citizen atanır.
     //Firestore üzerinden kayıtlı kullanıcıların rolleri değiştirilebilir (örn : citizen -> admin olabilir)
     private fun updateUI(user: FirebaseUser?) {

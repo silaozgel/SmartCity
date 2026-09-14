@@ -10,9 +10,12 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="24dp"
-        android:paddingBottom="100dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="150dp"
         android:clipToPadding="false">
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -138,6 +141,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
+            app:itemIconSize="40dp"
+            app:itemPaddingTop="16dp"
+            app:itemPaddingBottom="16dp"
+            app:itemTextAppearanceActive="@style/BottomNavTextAppearanceActive"
+            app:itemTextAppearanceInactive="@style/BottomNavTextAppearance"
             app:itemIconTint="@color/bottom_nav_color_selector"
             app:itemTextColor="@color/bottom_nav_color_selector"
             app:labelVisibilityMode="labeled"

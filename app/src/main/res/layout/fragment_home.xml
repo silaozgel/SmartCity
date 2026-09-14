@@ -52,6 +52,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:paddingBottom="100dp"
+                android:clipToPadding="false"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
         </LinearLayout>
 
@@ -122,6 +124,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
+            app:itemIconSize="40dp"
+            app:itemPaddingTop="16dp"
+            app:itemPaddingBottom="16dp"
+            app:itemTextAppearanceActive="@style/BottomNavTextAppearanceActive"
+            app:itemTextAppearanceInactive="@style/BottomNavTextAppearance"
             app:itemIconTint="@color/bottom_nav_color_selector"
             app:itemTextColor="@color/bottom_nav_color_selector"
             app:labelVisibilityMode="labeled"
@@ -140,6 +147,7 @@
         app:layout_anchor="@id/bottomAppBar"
         app:layout_anchorGravity="center"
         app:tint="@color/green_primary"
-        app:backgroundTint="@color/white" />
+        app:backgroundTint="@color/white"
+        app:elevation="6dp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

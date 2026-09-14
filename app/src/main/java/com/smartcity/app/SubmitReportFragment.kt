@@ -85,7 +85,6 @@ class SubmitReportFragment : Fragment() {
             }
 
 
-
             if (title.isEmpty() || description.isEmpty()) {
                 Toast.makeText(requireContext(), "The title and description cannot be empty.", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
@@ -94,6 +93,9 @@ class SubmitReportFragment : Fragment() {
             // ViewModel üzerinden veritabanına yazar
             viewModel.submitNewReport(title, description, category, address, base64Image)
         }
+
+        // Form sayfasındayken görünmez orta sekmenin seçili olmasını sağla (böylece My Requests veya Profile seçili kalıp kalın görünmez)
+        binding.bottomNavSubmit.selectedItemId = R.id.nav_placeholder
 
         // ViewModel'den gelen yükleme durumunu dinler
         viewModel.isLoading.observe(viewLifecycleOwner) { isLoading ->

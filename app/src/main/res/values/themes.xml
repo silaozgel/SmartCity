@@ -14,4 +14,13 @@
     <style name="Widget.App.BottomNavigationView.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
         <item name="android:color">#33FFFFFF</item>
     </style>
+
+    <style name="BottomNavTextAppearance" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="BottomNavTextAppearanceActive" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>
