@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home_tab"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="My Requests" />
+
+
+    <item
+        android:id="@+id/nav_placeholder"
+        android:title=""
+        android:enabled="true" />
+
+    <item
+        android:id="@+id/nav_profile_tab"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Profile" />
+</menu>

@@ -1,7 +1,6 @@
 package com.smartcity.app
 
 import org.junit.Test
-
 import org.junit.Assert.*
 
 /**
