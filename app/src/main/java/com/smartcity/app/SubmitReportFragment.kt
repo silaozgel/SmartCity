@@ -94,7 +94,7 @@ class SubmitReportFragment : Fragment() {
             viewModel.submitNewReport(title, description, category, address, base64Image)
         }
 
-        // Form sayfasındayken görünmez orta sekmenin seçili olmasını sağla (böylece My Requests veya Profile seçili kalıp kalın görünmez)
+        // footerdaki yazılar bozuluyordu fixlendi
         binding.bottomNavSubmit.selectedItemId = R.id.nav_placeholder
 
         // ViewModel'den gelen yükleme durumunu dinler

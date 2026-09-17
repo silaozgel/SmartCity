@@ -6,15 +6,12 @@
     android:layout_height="match_parent"
     android:background="@color/green_background">
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingStart="24dp"
-        android:paddingEnd="24dp"
-        android:paddingTop="24dp"
-        android:paddingBottom="150dp"
-        android:clipToPadding="false">
+        android:paddingBottom="160dp"
+        android:clipToPadding="false"
+        android:fillViewport="true">
 
 
         <LinearLayout
